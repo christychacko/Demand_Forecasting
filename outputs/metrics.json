@@ -1,0 +1,35 @@
+{
+  "Naive_7day": {
+    "RMSE": 12.050809101467005,
+    "MAE": 9.068844444444444,
+    "MAPE_%": 19.900579385623583,
+    "WMAPE_%": 16.600085665159867,
+    "Bias_%": 2.308322170965043
+  },
+  "MovingAverage_30day": {
+    "RMSE": 12.624905746622867,
+    "MAE": 9.568993333333333,
+    "MAPE_%": 21.22642076933232,
+    "WMAPE_%": 17.515584266084286,
+    "Bias_%": 5.182987588043052
+  },
+  "RandomForest": {
+    "RMSE": 8.398439138282981,
+    "MAE": 6.415259866625735,
+    "MAPE_%": 14.136132237619032,
+    "WMAPE_%": 11.742826112260332,
+    "Bias_%": 0.943872389789483
+  },
+  "HistGradientBoosting": {
+    "RMSE": 7.686346140380673,
+    "MAE": 5.931717491196491,
+    "MAPE_%": 13.015362827171364,
+    "WMAPE_%": 10.857724939334428,
+    "Bias_%": -0.2573804372820067
+  },
+  "_summary": {
+    "best_model": "HistGradientBoosting",
+    "wmape_improvement_over_naive_%": 34.59,
+    "note": "Safety stock is typically sized proportional to forecast error (std dev of errors over the lead time). A WMAPE reduction of 34.6% vs. the naive baseline implies a roughly proportional reduction in required safety stock for the same service level, holding lead-time variability constant."
+  }
+}
